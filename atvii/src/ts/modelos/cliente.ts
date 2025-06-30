@@ -11,7 +11,7 @@ export default class Cliente {
     private endereco!: Endereco
     private documentos: Documento[] = []
     private dependentes: Cliente[] = []
-    private titular!: Cliente
+    private titular?: Cliente;
 
     constructor(nome: string, nomeSocial: string, dataNascimento: Date) {
         this.nome = nome

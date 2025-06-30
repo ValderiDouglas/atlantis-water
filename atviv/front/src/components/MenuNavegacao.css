@@ -1,0 +1,33 @@
+.menu-navegacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f0f0f0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-navegacao ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu-navegacao a {
+  text-decoration: none;
+  color: #535bf2;
+  font-weight: bold;
+}
+
+.menu-navegacao a.active {
+  color: #1976d2;
+}
+
+/* Espaço para que o conteúdo da página não fique escondido atrás da navbar */
+body {
+  padding-top: 70px; /* ajuste conforme a altura da navbar */
+}
